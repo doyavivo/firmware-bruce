@@ -276,7 +276,7 @@ void boot_screen() {
     tft.drawPixel(0, 0, bruceConfig.bgColor);
     tft.drawCentreString("Doya Vivo", tftWidth / 2, 10, 1);
     tft.setTextSize(2);
-    tft.drawCentreString("DIY Smoochiee", tftWidth / 2, 45, 1);
+    tft.drawCentreString("DIY C5 TFT", tftWidth / 2, 45, 1);
     tft.drawCentreString("Ver 1.17.0", tftWidth / 2, 65, 1);
 
     tft.setTextSize(FM);
