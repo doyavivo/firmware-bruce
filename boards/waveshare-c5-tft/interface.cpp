@@ -5,12 +5,14 @@
 #include "hal/inputs/buttons.h"
 #include <interface.h>
 
+#ifdef HAS_5_BUTTONS
 #define SEL_BTN 28
 
 #define DW_BTN 1
 #define L_BTN 14
 #define R_BTN 13
 #define UP_BTN 0
+#endif
 
 static DeviceButtons buttonsCfg() { return DeviceButtons{L_BTN, R_BTN, UP_BTN, DW_BTN, SEL_BTN}; }
 
