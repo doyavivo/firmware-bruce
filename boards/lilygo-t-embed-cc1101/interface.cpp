@@ -94,7 +94,7 @@ void _setup_gpio() {
     bruceConfigPins.mic_bus = {(gpio_num_t)39, (gpio_num_t)42, GPIO_NUM_NC, MIC_TYPE_PDM}; // clk,data
 #else
     // lilygo-t-embed env (non-CC1101)
-    bruceConfigPins.i2c_bus = {(gpio_num_t)44, (gpio_num_t)43};    // sda, scl (Grove)
+    bruceConfigPins.i2c_bus = {(gpio_num_t)8, (gpio_num_t)18};    // sda, scl (Grove)
     bruceConfigPins.sys_i2c = {GPIO_NUM_NC, GPIO_NUM_NC};          // not defined on this variant
     bruceConfigPins.uart_bus = {(gpio_num_t)44, (gpio_num_t)43};   // rx, tx
     bruceConfigPins.gps_bus = {(gpio_num_t)44, (gpio_num_t)43};    // rx, tx
@@ -107,7 +107,7 @@ void _setup_gpio() {
     // No dedicated PN532 SPI bus defined on this env -- RC522-SPI shares the generic SPI bus.
     bruceConfigPins.PN532_bus = {(gpio_num_t)40, (gpio_num_t)38, (gpio_num_t)41, (gpio_num_t)16};
     bruceConfigPins.CC1101_bus = {
-        (gpio_num_t)40, (gpio_num_t)38, (gpio_num_t)41, (gpio_num_t)43, (gpio_num_t)44, GPIO_NUM_NC
+        (gpio_num_t)40, (gpio_num_t)38, (gpio_num_t)41, (gpio_num_t)17, (gpio_num_t)18, (gpio_num_t)8
     }; // sck,miso,mosi,cs,gdo0,gdo2 (no dedicated gdo2 pin on this env)
     bruceConfigPins.NRF24_bus = {
         (gpio_num_t)40, (gpio_num_t)38, (gpio_num_t)41, (gpio_num_t)43, (gpio_num_t)44
