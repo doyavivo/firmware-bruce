@@ -43,7 +43,7 @@ void _setup_gpio() {
         (gpio_num_t)10, (gpio_num_t)9, (gpio_num_t)8, (gpio_num_t)3, (gpio_num_t)2
     }; // sck,miso,mosi,cs(ss),ce
     bruceConfigPins.SDCARD_bus = {
-        (gpio_num_t)10, (gpio_num_t)9, (gpio_num_t)8, (gpio_num_t)26
+        (gpio_num_t)10, (gpio_num_t)9, (gpio_num_t)8, (gpio_num_t)6
         
     }; // sck,miso,mosi,cs
 #if !defined(LITE_VERSION)
