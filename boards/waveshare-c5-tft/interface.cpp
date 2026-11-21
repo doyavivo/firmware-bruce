@@ -22,7 +22,7 @@ static DeviceButtons buttonsCfg() { return DeviceButtons{L_BTN, R_BTN, UP_BTN, D
 ** Description:   initial setup for the device
 ***************************************************************************************/
 void _setup_gpio() {
-    bruceConfigPins.i2c_bus = {(gpio_num_t)4, (gpio_num_t)5}; 
+    bruceConfigPins.i2c_bus = {(gpio_num_t)2, (gpio_num_t)3}; 
   //  bruceConfigPins.sys_i2c = {(gpio_num_t)4, (gpio_num_t)5}; //sda , scl
     bruceConfigPins.rfTx = 4;
     bruceConfigPins.rfRx = 5;
