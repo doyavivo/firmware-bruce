@@ -29,7 +29,7 @@ void _setup_gpio() {
    // bruceConfigPins.irTx = 7;
   //  bruceConfigPins.irRx = 6;
     bruceConfigPins.rotation = 1;
-    bruceConfigPins.uart_bus = {(gpio_num_t)12, (gpio_num_t)11}; // rx, tx
+    //bruceConfigPins.uart_bus = {(gpio_num_t)12, (gpio_num_t)11}; // rx, tx
     bruceConfigPins.gps_bus = {(gpio_num_t)4, (gpio_num_t)5};    // rx, tx
     bruceConfigPins.badusb_bus = {(gpio_num_t)4, (gpio_num_t)5}; // rx, tx
     // Board's default/generic SPI bus (used by drivers without their own bus, e.g. RC522-SPI)
