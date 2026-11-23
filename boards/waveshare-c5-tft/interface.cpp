@@ -26,8 +26,8 @@ void _setup_gpio() {
   //  bruceConfigPins.sys_i2c = {(gpio_num_t)4, (gpio_num_t)5}; //sda , scl
     bruceConfigPins.rfTx = 4;
     bruceConfigPins.rfRx = 5;
-    bruceConfigPins.irTx = 7;
-    bruceConfigPins.irRx = 6;
+   // bruceConfigPins.irTx = 7;
+  //  bruceConfigPins.irRx = 6;
     bruceConfigPins.rotation = 1;
     bruceConfigPins.uart_bus = {(gpio_num_t)12, (gpio_num_t)11}; // rx, tx
     bruceConfigPins.gps_bus = {(gpio_num_t)4, (gpio_num_t)5};    // rx, tx
@@ -43,7 +43,7 @@ void _setup_gpio() {
         (gpio_num_t)10, (gpio_num_t)9, (gpio_num_t)8, (gpio_num_t)3, (gpio_num_t)2
     }; // sck,miso,mosi,cs(ss),ce
     bruceConfigPins.SDCARD_bus = {
-        (gpio_num_t)10, (gpio_num_t)9, (gpio_num_t)8, (gpio_num_t)26
+        (gpio_num_t)10, (gpio_num_t)9, (gpio_num_t)8, (gpio_num_t)6
         
     }; // sck,miso,mosi,cs
 #if !defined(LITE_VERSION)
