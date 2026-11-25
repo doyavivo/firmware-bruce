@@ -86,12 +86,12 @@ void _setup_gpio() {
     // CYD35_base variant (CYD-3248S035x)
     bruceConfigPins.rotation = 1;
     bruceConfigPins.uart_bus = {(gpio_num_t)3, (gpio_num_t)1}; // rx, tx
-    bruceConfigPins.gps_bus = {(gpio_num_t)3, (gpio_num_t)1};  // rx, tx
+    bruceConfigPins.gps_bus = {(gpio_num_t)27, (gpio_num_t)22};  // rx, tx
     bruceConfigPins.CC1101_bus = {
-        (gpio_num_t)18, (gpio_num_t)19, (gpio_num_t)23, (gpio_num_t)35, (gpio_num_t)22, GPIO_NUM_NC
+        (gpio_num_t)18, (gpio_num_t)19, (gpio_num_t)23, (gpio_num_t)27, (gpio_num_t)22,  (gpio_num_t)35
     }; // sck,miso,mosi,cs,gdo0,gdo2
     bruceConfigPins.NRF24_bus = {
-        (gpio_num_t)18, (gpio_num_t)19, (gpio_num_t)23, (gpio_num_t)35, (gpio_num_t)22
+        (gpio_num_t)18, (gpio_num_t)19, (gpio_num_t)23, (gpio_num_t)4, (gpio_num_t)16
     }; // sck,miso,mosi,cs(ss),ce
 #if !defined(LITE_VERSION)
     bruceConfigPins.W5500_bus = {
@@ -102,12 +102,12 @@ void _setup_gpio() {
     // CYD_base variant (CYD-2432Sxxx)
     bruceConfigPins.rotation = 3;
     bruceConfigPins.uart_bus = {(gpio_num_t)1, (gpio_num_t)3}; // rx, tx
-    bruceConfigPins.gps_bus = {(gpio_num_t)1, (gpio_num_t)3};  // rx, tx
+    bruceConfigPins.gps_bus = {(gpio_num_t)27, (gpio_num_t)22};  // rx, tx
     bruceConfigPins.CC1101_bus = {
-        (gpio_num_t)18, (gpio_num_t)19, (gpio_num_t)23, (gpio_num_t)27, (gpio_num_t)22, GPIO_NUM_NC
+        (gpio_num_t)18, (gpio_num_t)19, (gpio_num_t)23, (gpio_num_t)27, (gpio_num_t)22,  (gpio_num_t)35
     }; // sck,miso,mosi,cs,gdo0,gdo2
     bruceConfigPins.NRF24_bus = {
-        (gpio_num_t)18, (gpio_num_t)19, (gpio_num_t)23, (gpio_num_t)27, (gpio_num_t)22
+        (gpio_num_t)18, (gpio_num_t)19, (gpio_num_t)23, (gpio_num_t)4, (gpio_num_t)16
     }; // sck,miso,mosi,cs(ss),ce
 #if !defined(LITE_VERSION)
     bruceConfigPins.W5500_bus = {
