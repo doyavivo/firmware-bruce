@@ -62,9 +62,9 @@ void _setup_gpio() {
     pinMode(TFT_DC, OUTPUT);
     digitalWrite(TFT_DC, HIGH);
 
-#ifdef HAS_5_BUTTONS
+//#ifdef HAS_5_BUTTONS
    hal_buttons_init(buttonsCfg(), 5);
-#endif
+//#endif
 
     pinMode(bruceConfigPins.NRF24_bus.cs, OUTPUT);
     pinMode(bruceConfigPins.CC1101_bus.cs, OUTPUT);
