@@ -52,6 +52,8 @@ void _setup_gpio() {
     }; // sck,miso,mosi,cs,int,rst
 #endif
 
+   
+    hal_buttons_init(buttonsCfg(), 5);
     pinMode(TFT_CS, OUTPUT);
     digitalWrite(TFT_CS, HIGH);
     pinMode(TFT_MOSI, OUTPUT);
@@ -63,7 +65,7 @@ void _setup_gpio() {
     digitalWrite(TFT_DC, HIGH);
 
 //#ifdef HAS_5_BUTTONS
-   hal_buttons_init(buttonsCfg(), 5);
+  // hal_buttons_init(buttonsCfg(), 5);
 //#endif
 
     pinMode(bruceConfigPins.NRF24_bus.cs, OUTPUT);
